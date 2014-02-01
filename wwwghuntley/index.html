@@ -1,0 +1,29 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        img {
+            position: fixed;
+            top: 35%;
+            left: 50%;
+            margin-left: -115px;
+            margin-top: -106px;
+        }
+    </style>
+    <script type='text/javascript' src='Scripts/jquery-2.1.0.min.js'></script>
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            $('img').css('transform', 'rotate(' + 90 * Math.floor(Math.random() * 3.3) + 'deg) scale(1.25)');
+        });
+    </script>
+</head>
+<body>
+    <img src='Images/b4.gif'>
+</body>
+</html>
